@@ -14,7 +14,7 @@ if(isset($_POST['login'])) {
     if($username == "ays123" && $password == "aysproduct123") {
 
         $_SESSION['admin'] = true;
-        header("location: view_products.php");
+        header("location: admin_panel.php");
         exit();
 
     } else {

@@ -16,51 +16,59 @@ include 'db.php';
     <title>Admin Panel</title>
 
     <style>
-
-        /* Page styling */
+        /* FULL PAGE BACKGROUND + CENTERING */
         body {
             font-family: Arial;
-            background:#f4f4f4;
-            text-align:center;
+            background: url('images/img4.avif') no-repeat center center fixed;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            margin: 0;
         }
 
-        /* Main box container */
+        /* ADMIN BOX */
         .box {
-            background:white;
-            width:300px;
-            margin:50px auto;
-            padding:20px;
-            border-radius:10px;
+            background: rgba(255,255,255,0.92);
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
         }
 
-        /* Links (buttons) */
+        /* TITLE */
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* BUTTON LINKS */
         a {
-            display:block;
-            margin:10px;
-            text-decoration:none;
-            padding:10px;
-            background:black;
-            color:white;
-            border-radius:5px;
+            display: block;
+            margin: 12px 0;
+            text-decoration: none;
+            padding: 12px;
+            background: black;
+            color: white;
+            border-radius: 6px;
+            transition: 0.3s;
         }
 
-        /* Hover effect */
         a:hover {
-            background:#333;
+            background: #333;
         }
-
     </style>
 </head>
 
 <body>
 
-<!-- Admin panel box -->
 <div class="box">
 
-    <!-- Title -->
     <h2>Admin Panel</h2>
 
-    <!-- Navigation links -->
     <a href="add_product.php">Add Product</a>
     <a href="view_products.php">View Products</a>
     <a href="logout.php">Logout</a>
