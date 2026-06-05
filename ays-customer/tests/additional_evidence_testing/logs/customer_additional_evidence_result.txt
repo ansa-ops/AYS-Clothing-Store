@@ -1,0 +1,27 @@
+﻿============================================================
+AYS Clothing Store - Additional Advanced Testing Evidence
+Component: Customer Management
+Tester: Yunisha Tamang
+Purpose: Extra testing beyond standard validation and CRUD
+============================================================
+
+TEST 1: SQL INJECTION-STYLE INPUT TEST
+------------------------------------------------------------
+PASS - SQL injection-style search: System handled SQL-like input safely and did not crash.
+Input tested: ' OR '1'='1
+
+TEST 2: XSS / SCRIPT INPUT TEST
+------------------------------------------------------------
+PASS - XSS/script input: Script-style input was handled safely by the validation process.
+Input tested: <script>alert('test')</script>
+Note: User output should also be escaped in the interface using htmlspecialchars().
+
+TEST 3: INVALID CUSTOMERID TEST
+------------------------------------------------------------
+PASS - Invalid CustomerID: Invalid CustomerID was handled safely and no real customer record was returned.
+CustomerID tested: 999999
+
+============================================================
+ADDITIONAL EVIDENCE TEST SUMMARY: 3 / 3 tests passed.
+ALL ADDITIONAL ADVANCED CUSTOMER TESTS PASSED.
+These tests provide extra evidence beyond the standard validation and CRUD tests.

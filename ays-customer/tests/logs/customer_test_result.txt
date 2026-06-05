@@ -1,0 +1,41 @@
+﻿============================================
+AYS Clothing Store - Customer Test Script
+Component: Customer Management
+Tester: Yunisha Tamang
+============================================
+
+SECTION 1: VALIDATION TESTS
+--------------------------------------------
+PASS - Full name blank: Blank full name is rejected.
+PASS - Full name with numbers: Name with numbers is rejected.
+PASS - Valid full name: Valid full name is accepted.
+PASS - Email blank: Blank email is rejected.
+PASS - Email missing @: Invalid email format is rejected.
+PASS - Valid email: Valid email is accepted.
+PASS - Phone blank: Blank phone number is rejected.
+PASS - Phone 7 digits: Phone below 8 digits is rejected.
+PASS - Phone 9 digits: Phone above 8 digits is rejected.
+PASS - Phone letters: Phone with letters is rejected.
+PASS - Valid phone: Valid 8 digit phone number is accepted.
+PASS - Password blank: Blank password is rejected.
+PASS - Password 5 characters: Password below 6 characters is rejected.
+PASS - Password 6 characters: Password with exactly 6 characters is accepted.
+PASS - Valid password: Valid password is accepted.
+
+SECTION 2: DATABASE / FUNCTIONAL TESTS
+--------------------------------------------
+PASS - Add customer: Customer was added successfully.
+PASS - Find customer: New customer was found using findCustomer().
+PASS - View customer by ID: Customer details were loaded using getCustomerByID().
+PASS - List customers: Customer list was returned using getAllCustomers().
+PASS - Filter active customers: Active customer filter returned results safely.
+PASS - Customer login: Customer logged in successfully with correct password.
+PASS - Update customer: Customer details were updated successfully.
+PASS - Update membership: Customer membership was updated successfully.
+PASS - Duplicate email: Duplicate email was not accepted by the database/system.
+PASS - Delete customer: Test customer was deleted successfully at the end of testing.
+
+============================================
+TEST SUMMARY: 25 / 25 tests passed.
+ALL CUSTOMER TESTS PASSED.
+
